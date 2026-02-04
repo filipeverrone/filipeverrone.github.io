@@ -1,30 +1,153 @@
-<!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>Sandbox</title>
-            <link rel="stylesheet" href="style.css">
-        </head>
-        <body bgcolor="black" text="white">
-            <img src="images/background.png" width="1400" height="300"/>
-            <h1 align="center">Computing Simu</h1>
-            <div id="resume">
-                <h2 class="subtitle">Resume</h2>
-                <p class="text">Workspace for simulations related to computing. Open source, leave your contribution.<br>Enjoy the content!</p>
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Filipe Verrone de Lima — Personal Website</title>
+  <meta name="description" content="Research, projects and publications." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://filipeverrone.github.io/YOUR_REPO_NAME/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Filipe Verrone de Lima — Personal Website" />
+  <meta property="og:description" content="Research, projects and publications." />
+  <meta property="og:url" content="https://filipeverrone.github.io/YOUR_REPO_NAME/" />
+  <meta property="og:image" content="https://filipeverrone.github.io/YOUR_REPO_NAME/assets/img/og-image.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Filipe Verrone de Lima — Personal Website" />
+  <meta name="twitter:description" content="Research, projects and publications." />
+  <meta name="twitter:image" content="https://filipeverrone.github.io/YOUR_REPO_NAME/assets/img/og-image.png" />
+
+  <link rel="icon" href="assets/img/og-image.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Filipe Verrone de Lima",
+    "url": "https://filipeverrone.github.io",
+    "sameAs": [
+      "https://github.com/filipeverrone"
+    ],
+    "jobTitle": "Software Engineer / Researcher",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Skyone"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to Home">
+        <span class="brand__name">Filipe Verrone de Lima</span>
+        <span class="brand__tag">Engineering · Research</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">Menu</button>
+        <ul class="nav__menu" id="navMenu">
+          <li><a class="nav__link is-active" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="projects.html">Projects</a></li>
+          <li><a class="nav__link" href="publications.html">Publications</a></li>
+          <!-- <li><a class="nav__link" href="blog/index.html">Blog</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="kicker">Personal website</p>
+          <h1 class="hero-title">Research, projects and publications.</h1>
+          <p class="hero-subtitle">
+            Focus areas: applied ML, medical imaging and production systems.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="projects.html">View Projects</a>
+            <a class="btn btn--secondary" href="publications.html">View Publications</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-card">
+              <h2 class="meta-title">Current</h2>
+              <p class="meta-text">PhD research · Medical imaging & representation learning</p>
             </div>
-            <div id="aba1">
-                <h2 class="subline">First step</h2>
-                <p class="text">To create a project from idea, take your time for study formats.</p>
+            <div class="meta-card">
+              <h2 class="meta-title">Contact</h2>
+              <p class="meta-text">
+                <!-- Email: <a href="mailto:filipeverrone.lima@mackenzista.com.br">filipeverrone.lima@mackenzista.com.br</a><br /> -->
+                GitHub: <a href="https://github.com/filipeverrone">filipeverrone</a>
+              </p>
             </div>
-            <address>
-                Autor: Filipe Verrone de Lima<br>
-                Acesse meu <a href="https://verrofilipe.github.io" target="-blank">diretório</a>
-            </address>
-            <form>
-                <dialog>Support</dialog>
-                <input type="password"/>
-                <input type="submit"/>
-            </form>
-        </body>
-    </html>
-    
+          </div>
+        </div>
+
+        <aside class="hero-aside" aria-label="Highlights">
+          <div class="panel">
+            <h2 class="panel-title">Highlights</h2>
+            <ul class="list">
+              <li>Peer-reviewed publications and preprints</li>
+              <!-- <li>Open-source tools and reproducible experiments</li> -->
+              <!-- <li>Academic-friendly portfolio</li> -->
+            </ul>
+          </div>
+
+          <!-- <div class="panel">
+            <h2 class="panel-title">Latest posts</h2>
+            <div id="latestPosts" class="muted">No posts yet.</div> -->
+            <!-- <p class="small muted">Posts are Markdown in <code>/blog/posts/</code>.</p> -->
+          <!-- </div> -->
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Quick links</h2>
+        <div class="grid">
+          <a class="card" href="about.html">
+            <h3 class="card-title">About</h3>
+            <p class="card-text">Bio, interests, and academic profile.</p>
+          </a>
+          <a class="card" href="projects.html">
+            <h3 class="card-title">Projects</h3>
+            <p class="card-text">Selected work and ongoing initiatives.</p>
+          </a>
+          <a class="card" href="publications.html">
+            <h3 class="card-title">Publications</h3>
+            <p class="card-text">Papers, preprints, and citations.</p>
+          </a>
+          <!-- <a class="card" href="blog/index.html">
+            <h3 class="card-title">Blog</h3>
+            <p class="card-text">Notes, tutorials, and research logs.</p>
+          </a> -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="small muted">© <span id="year"></span> Filipe Verrone de Lima. All rights reserved.</p>
+      <p class="small muted">
+        <!-- <a href="blog/index.html">Blog</a> · -->
+        <a href="projects.html">Projects</a> ·
+        <a href="publications.html">Publications</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
