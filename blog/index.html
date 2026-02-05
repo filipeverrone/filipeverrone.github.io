@@ -1,0 +1,89 @@
+<!-- blog/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — Filipe Verrone de Lima</title>
+  <meta name="description" content="Blog posts in Markdown rendered to HTML on the client." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://filipeverrone.github.io/blog/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Blog — Filipe Verrone de Lima" />
+  <meta property="og:description" content="Blog posts in Markdown rendered to HTML on the client." />
+  <meta property="og:url" content="https://filipeverrone.github.io/blog/" />
+  <meta property="og:image" content="https://filipeverrone.github.io/assets/img/og-image.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blog — Filipe Verrone de Lima" />
+  <meta name="twitter:description" content="Blog posts in Markdown rendered to HTML on the client." />
+  <meta name="twitter:image" content="https://filipeverrone.github.io/assets/img/og-image.png" />
+
+  <link rel="icon" href="../assets/img/og-image.png" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Go to Home">
+        <span class="brand__name">Filipe Verrone de Lima</span>
+        <span class="brand__tag">Research · Engineering · Writing</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">Menu</button>
+        <ul class="nav__menu" id="navMenu">
+          <li><a class="nav__link" href="../index.html">Home</a></li>
+          <li><a class="nav__link" href="../about.html">About</a></li>
+          <li><a class="nav__link" href="../projects.html">Projects</a></li>
+          <li><a class="nav__link" href="../publications.html">Publications</a></li>
+          <li><a class="nav__link is-active" href="index.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <div class="container">
+      <header class="page-header">
+        <h1>Blog</h1>
+        <p class="lead">Posts are stored as Markdown files in <code>/blog/posts/</code> and rendered on this page.</p>
+      </header>
+
+      <section class="section-tight">
+        <div class="blog-toolbar">
+          <input id="blogSearch" class="input" type="search" placeholder="Search posts..." aria-label="Search posts" />
+        </div>
+
+        <div id="blogList" class="blog-list">
+          <div class="muted">Loading posts…</div>
+        </div>
+      </section>
+
+      <section class="section-tight">
+        <hr class="hr" />
+        <article class="post">
+          <header class="post-header">
+            <h2 id="postTitle">Select a post</h2>
+            <p id="postMeta" class="muted"></p>
+          </header>
+          <div id="postContent" class="prose">
+            <p class="muted">Choose a post from the list. If there are no posts yet, add Markdown files to <code>/blog/posts/</code> and update <code>/posts/index.json</code>.</p>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="small muted">© <span id="year"></span> Filipe Verrone de Lima. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

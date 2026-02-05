@@ -1,0 +1,150 @@
+<!-- projects.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Filipe Verrone de Lima</title>
+  <meta name="description" content="Selected projects, open-source work, and ongoing research engineering." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://filipeverrone.github.io/projects.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Projects — Filipe Verrone de Lima" />
+  <meta property="og:description" content="Selected projects, open-source work, and ongoing research engineering." />
+  <meta property="og:url" content="https://filipeverrone.github.io/projects.html" />
+  <meta property="og:image" content="https://filipeverrone.github.io/assets/img/og-image.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projects — Filipe Verrone de Lima" />
+  <meta name="twitter:description" content="Selected projects, open-source work, and ongoing research engineering." />
+  <meta name="twitter:image" content="https://filipeverrone.github.io/assets/img/og-image.png" />
+
+  <link rel="icon" href="assets/img/og-image.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to Home">
+        <span class="brand__name">Filipe Verrone de Lima</span>
+        <span class="brand__tag">Engineering · Research</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">Menu</button>
+        <ul class="nav__menu" id="navMenu">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link is-active" href="projects.html">Projects</a></li>
+          <!-- <li><a class="nav__link" href="publications.html">Publications</a></li> -->
+          <!-- <li><a class="nav__link" href="blog/index.html">Blog</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <div class="container">
+      <header class="page-header">
+        <h1>Projects</h1>
+        <p class="lead">Selected work and open-source contributions</p>
+      </header>
+
+      <section class="section-tight">
+        <div class="grid grid--2">
+          <article class="card">
+            <h2 class="card-title">K3s Tutorial - Lightweight Kubernetes</h2>
+            <p class="card-text">
+              Comprehensive tutorial for deploying and managing K3s (Lightweight Kubernetes) clusters. 
+              Created during undergraduate studies as a collaborative project to simplify Kubernetes learning 
+              and deployment for edge computing and resource-constrained environments.
+            </p>
+            <p class="card-meta">
+              <span class="pill">Kubernetes</span>
+              <span class="pill">K3s</span>
+              <span class="pill">DevOps</span>
+              <span class="pill">Infrastructure</span>
+            </p>
+            <p class="card-links">
+              <a href="https://prisma-iap.github.io/tutorial_k3s/" target="_blank" rel="noopener noreferrer">Tutorial Site</a>
+              <span class="sep">·</span>
+              <a href="https://github.com/prisma-iap/tutorial_k3s" target="_blank" rel="noopener noreferrer">Source Code</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h2 class="card-title">Medical Imaging ML Pipeline</h2>
+            <p class="card-text">
+              PhD research project focusing on bone age assessment using hand X-ray images. 
+              Implements quality control triage, convolutional autoencoders for representation learning, 
+              and YOLO-based preprocessing to improve reliability in clinical AI systems.
+            </p>
+            <p class="card-meta">
+              <span class="pill">Medical Imaging</span>
+              <span class="pill">Deep Learning</span>
+              <span class="pill">Computer Vision</span>
+              <span class="pill">PyTorch</span>
+            </p>
+            <p class="card-links">
+              <span class="muted">Research in progress</span>
+            </p>
+          </article>
+
+          <article class="card">
+            <h2 class="card-title">Production ML Systems</h2>
+            <p class="card-text">
+              Full-stack ML systems development at Skyone, including model deployment, monitoring, 
+              and scaling. Building cloud-native solutions with modern frameworks, containerization, 
+              and orchestration for reliable production environments.
+            </p>
+            <p class="card-meta">
+              <span class="pill">MLOps</span>
+              <span class="pill">FastAPI</span>
+              <span class="pill">Docker</span>
+              <span class="pill">Cloud</span>
+            </p>
+            <p class="card-links">
+              <span class="muted">Professional work</span>
+            </p>
+          </article>
+
+          <article class="card">
+            <h2 class="card-title">Personal Website</h2>
+            <p class="card-text">
+              This GitHub Pages site showcasing professional work, research, and academic profile. 
+              Built with modern CSS, responsive design, and optimized for accessibility and SEO.
+            </p>
+            <p class="card-meta">
+              <span class="pill">HTML/CSS</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">GitHub Pages</span>
+            </p>
+            <p class="card-links">
+              <a href="https://github.com/filipeverrone/filipeverrone.github.io" target="_blank" rel="noopener noreferrer">Source Code</a>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-tight">
+        <h2>Open Source Contributions</h2>
+        <p class="muted">
+          Interested in collaborative projects related to ML infrastructure, medical imaging, and cloud-native development. 
+          Check out my <a href="https://github.com/filipeverrone" target="_blank" rel="noopener noreferrer">GitHub profile</a> for more repositories and contributions.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="small muted">© <span id="year"></span> Filipe Verrone de Lima. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
