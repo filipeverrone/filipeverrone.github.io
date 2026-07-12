@@ -1,5 +1,23 @@
 // assets/js/main.js
 (function () {
+  // Register Service Worker for PWA
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      const pathname = window.location.pathname;
+      let rootPath = '/';
+      if (pathname.includes('/blog/')) {
+        rootPath = pathname.substring(0, pathname.indexOf('/blog/') + 1);
+      } else {
+        const lastSlash = pathname.lastIndexOf('/');
+        rootPath = lastSlash >= 0 ? pathname.substring(0, lastSlash + 1) : '/';
+      }
+      
+      navigator.serviceWorker.register(`${rootPath}sw.js`)
+        .then((reg) => console.log('[Service Worker] Registered successfully with scope:', reg.scope))
+        .catch((err) => console.error('[Service Worker] Registration failed:', err));
+    });
+  }
+
   const byId = (id) => document.getElementById(id);
 
   const yearEl = byId("year");

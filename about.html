@@ -22,6 +22,10 @@
 
   <link rel="icon" href="assets/img/og-image.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#0b1020" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -36,11 +40,12 @@
       <nav class="nav" aria-label="Primary navigation">
         <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">Menu</button>
         <ul class="nav__menu" id="navMenu">
-          <li><a class="nav__link" href="index.html">Home</a></li>
-          <li><a class="nav__link is-active" href="about.html">About</a></li>
-          <li><a class="nav__link" href="projects.html">Projects</a></li>
-          <!-- <li><a class="nav__link" href="publications.html">Publications</a></li> -->
-          <!-- <li><a class="nav__link" href="blog/index.html">Blog</a></li> -->
+          <li><a class="nav__link" href="index.html"><svg class="nav__icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="nav__text">Home</span></a></li>
+          <li><a class="nav__link" href="cv.html"><svg class="nav__icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="nav__text">CV/Resume</span></a></li>
+          <li><a class="nav__link" href="projects.html"><svg class="nav__icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><span class="nav__text">Projects</span></a></li>
+          <li><a class="nav__link is-active" href="about.html"><svg class="nav__icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span class="nav__text">About</span></a></li>
+          <!-- <li><a class="nav__link" href="publications.html"><svg class="nav__icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg><span class="nav__text">Publications</span></a></li> -->
+          <!-- <li><a class="nav__link" href="blog/index.html"><svg class="nav__icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg><span class="nav__text">Blog</span></a></li> -->
         </ul>
       </nav>
     </div>
@@ -54,78 +59,35 @@
       </header>
 
       <section class="section-tight">
-        <h2>Bio</h2>
-        <p>
-          Filipe Verrone de Lima is a Software Engineer and PhD researcher based in São Paulo, Brazil. 
-          He currently works at <strong>Skyone</strong>, where he builds scalable cloud-native solutions and production ML systems.
-        </p>
-        <p>
-          He is pursuing a PhD in Electrical and Computer Engineering at <strong>Universidade Presbiteriana Mackenzie (UPM)</strong>, 
-          focusing on medical imaging, representation learning, and quality control in healthcare AI systems. His research includes 
-          bone age assessment pipelines using hand X-ray images, image quality triage, convolutional autoencoders, and YOLO-based preprocessing.
-        </p>
-        <p>
-          Filipe holds an MSc in Electrical and Computer Engineering from Mackenzie Presbyterian University with a focus on AI in healthcare, 
-          and a BSc in Computer Engineering. He also holds a technical degree in Electrotechnics, providing him with a strong foundation 
-          in both software and hardware systems.
-        </p>
-      </section>
-
-      <section class="section-tight">
-        <h2>Education</h2>
-        <div class="timeline-item">
-          <h3>PhD in Electrical and Computer Engineering</h3>
-          <p class="muted">Universidade Presbiteriana Mackenzie (UPM) · In Progress</p>
-          <p>Focus: Medical imaging, AI quality control, representation learning</p>
-        </div>
-        <div class="timeline-item">
-          <h3>MSc in Electrical and Computer Engineering</h3>
-          <p class="muted">Universidade Presbiteriana Mackenzie (UPM) · Completed</p>
-          <p>Focus: Artificial Intelligence in Healthcare</p>
-        </div>
-        <div class="timeline-item">
-          <h3>BSc in Computer Engineering</h3>
-          <p class="muted">Faculdade Impacta Tecnologia · Completed</p>
-          <p>Foundation in software development, algorithms, and systems architecture</p>
-        </div>
-      </section>
-
-      <section class="section-tight">
-        <h2>Professional Experience</h2>
-        <div class="timeline-item">
-          <h3>Software Engineer</h3>
-          <p class="muted">Skyone · 2021 - Current</p>
-          <p>Developing full-stack solutions including frontend, backend, databases, and cloud infrastructure.</p>
-        </div>
-      </section>
-
-      <section class="section-tight">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Languages & Frameworks</h3>
-            <p class="muted">Python, JavaScript, TypeScript, Node.js</p>
+        <div class="bio-container">
+          <div class="bio-text">
+            <h2>Bio</h2>
+            <p>
+              Filipe is a Software Engineer and PhD researcher based in São Paulo, Brazil. 
+              He currently works at <strong>Skyone</strong>, where he builds scalable cloud-native solutions and production systems.
+            </p>
+            <p>
+              He is pursuing a PhD in Electrical and Computer Engineering at <strong>Universidade Presbiteriana Mackenzie (UPM)</strong>, 
+              focusing on medical imaging, representation learning, and quality control in healthcare AI systems. His research includes 
+              bone age assessment pipelines using hand X-ray images, image quality triage, convolutional autoencoders, and preprocessing techniques.
+            </p>
+            <p>
+              Filipe holds an MSc in Electrical and Computer Engineering from Mackenzie Presbyterian University with a focus on AI in healthcare, 
+              and a BSc in Computer Engineering. He also holds a technical degree in Electrotechnics, providing him with a strong foundation 
+              in both software and hardware systems.
+            </p>
           </div>
-          <div class="skill-category">
-            <h3>ML & AI</h3>
-            <p class="muted">Classification and regression models, Medical imaging, Autoencoder</p>
-          </div>
-          <div class="skill-category">
-            <h3>Infrastructure & DevOps</h3>
-            <p class="muted">Docker, Cloud Platforms, CI/CD, Kubernetes</p>
-          </div>
-          <div class="skill-category">
-            <h3>Databases</h3>
-            <p class="muted">SQL, Data modeling</p>
+          <div class="bio-photo">
+            <img src="assets/img/profile.png" alt="Filipe Verrone de Lima" class="profile-img" />
           </div>
         </div>
       </section>
 
       <section class="section-tight">
-        <h2>Research Interests</h2>
+        <h2>Interests</h2>
         <ul class="list">
           <li>Medical imaging and computer vision</li>
-          <li>Quality control and reliability in healthcare AI systems</li>
+          <li>Quality control and reliability in AI systems</li>
           <li>Representation learning and autoencoders</li>
           <li>Production ML systems and MLOps</li>
           <li>Object detection and preprocessing pipelines</li>
@@ -135,9 +97,13 @@
       <section class="section-tight">
         <h2>Beyond Work (some contributions)</h2>
         <ul class="list">
+          <li><a href="https://olympmath.verrone.workers.dev" target="_blank" rel="noopener noreferrer">Olympmath (website)</a></li>
+          <li><a href="https://custom-sim.pages.dev/" target="_blank" rel="noopener noreferrer">Natural Computing Simulator (website)</a></li>
           <li><a href="https://youtu.be/yGp2AsYZwDA?si=WWt8WApI0U7ggomq" target="_blank" rel="noopener noreferrer">🎵 Sacrifício de amor</a></li>
           <li><a href="https://music.apple.com/br/album/s%C3%B3-em-ti-feat-matheus-porto-single/1752793525" target="_blank" rel="noopener noreferrer">🎵 Só em Ti</a></li>
-          <li><a href="https://olympmath.verrone.workers.dev" target="_blank" rel="noopener noreferrer">Olympmath (website)</a></li>
+          <li><a href="https://www.youtube.com/live/nYGt2ERwbWA" target="_blank" rel="noopener noreferrer">🎵 Muito além do olhar - O musical</a></li>
+          <li><a href="https://youtu.be/efMBo-gJSS4" target="_blank" rel="noopener noreferrer">🎵 Os três irmãos - O musical</a></li>
+          <li><a href="https://youtu.be/R3WFbXAn5q4" target="_blank" rel="noopener noreferrer">🎵 Depois da cruz - O musical</a></li>
         </ul>
       </section>
 
@@ -145,18 +111,12 @@
         <h2>Links & Profiles</h2>
         <div class="links-grid">
           <div>
-            <h3>Professional</h3>
             <ul class="list">
               <li><a href="https://github.com/filipeverrone" target="_blank" rel="noopener noreferrer">GitHub</a></li>
               <li><a href="https://www.linkedin.com/in/filipevlima" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Academic</h3>
-            <ul class="list">
               <li><a href="http://lattes.cnpq.br/3722805482215586" target="_blank" rel="noopener noreferrer">Lattes CV</a></li>
               <li><a href="https://orcid.org/0000-0002-5077-0666" target="_blank" rel="noopener noreferrer">ORCID</a></li>
-              <!-- <li><a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">Google Scholar</a></li> -->
+              <li><a href="https://scholar.google.com/citations?user=zvWIPYkAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
             </ul>
           </div>
         </div>
@@ -166,7 +126,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="small muted">© <span id="year"></span> Filipe Verrone de Lima. All rights reserved.</p>
+      <p class="small muted">© <span id="year"></span> Filipe Verrone de Lima.</p>
     </div>
   </footer>
 
